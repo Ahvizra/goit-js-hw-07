@@ -1,0 +1,11 @@
+.img__styles {
+  width: auto;
+  height: 300px;
+}
+#gallery {
+  list-style: none;
+  display: flex;
+}
+.item:not(:last-child) {
+  margin-right: 40px;
+}
