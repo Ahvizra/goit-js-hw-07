@@ -1,3 +1,4 @@
+"use strict"
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -15,9 +16,8 @@ const images = [
 
 const galleryRef = document.querySelector('#gallery')
 
-const makeGaleryMarkup = (img) => {
-  const { url, alt } = img;
-  return `<li class="item"><img class="styles" src="${url}" alt="${alt}"></li>`;
+const makeGaleryMarkup = ({ url, alt } = img) => {
+  return `<li class="item"><img class="img__styles" src="${url}" alt="${alt}"></li>`;
 }
 
 const makeGalery = images.map(makeGaleryMarkup).join('')

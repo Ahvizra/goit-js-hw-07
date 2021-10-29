@@ -1,3 +1,4 @@
+"use strict"
 const inpuRef = document.querySelector('#validation-input');
 const validLengthRef = Number(inpuRef.getAttribute('data-length'));
 
